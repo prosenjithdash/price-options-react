@@ -1,5 +1,6 @@
 import { list } from 'postcss';
 import React from 'react';
+import Link from '../Link/Link';
 
 const Navbar = () => {
 
@@ -56,7 +57,7 @@ const Navbar = () => {
         <div >
             <ul className='flex'>
                 {
-                    routes.map(route => <li className='mr-6' key={route.id}><a href={route.path}>{route.name}</a></li>)
+                    routes.map(route => <Link key={route.id} route={route}></Link>)
                 }
             </ul>
         </div>
