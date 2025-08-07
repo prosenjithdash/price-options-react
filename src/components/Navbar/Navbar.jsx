@@ -17,7 +17,7 @@ const Navbar = () => {
     ];
     return (
         <div>
-            <div className='text-black bg-yellow-200' >
+            <div className='text-black bg-yellow-200 ' >
                 <div onClick={() => setOpen(!open)}>
                     {
                         open == true ? <MdMenuOpen /> : <RiMenu2Fill className='text-2xl md:hidden' />
@@ -25,13 +25,13 @@ const Navbar = () => {
                     
                 </div>
 
-                <ul className={`md:flex absolute ${open?'':'hidden'} bg-yellow-200 p-6 mb-6`}>
+                <ul className={`md:flex absolute ${open?'':'hidden'} bg-yellow-200 w-full p-6 mb-6 `}>
                     {
                         routes.map(route => <Link key={route.id} route={route}></Link>)
                     }
                 </ul>
             </div>
-            <div className="navbar bg-base-100">
+            <div className="navbar bg-base-100 pt-[100px]">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
