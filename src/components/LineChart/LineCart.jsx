@@ -14,11 +14,16 @@ const data = [
 
 const LineCart = () => {
     return (
-        <LineChart width={900} height={500} data={data}>
-            <Line type="monotone" dataKey="math" stroke="purple" />
-            <Line type="monotone" dataKey="english" stroke="red" />
-            <Line type="monotone" dataKey="bangla" stroke="green" />
-        </LineChart>
+        
+        <div className='m-12'>
+            <h2 className='text-2xl front-bold'>Line Chart : </h2>
+
+            <LineChart width={900} height={500} data={data}>
+                <Line type="monotone" dataKey="math" stroke="purple" />
+                <Line type="monotone" dataKey="english" stroke="red" />
+                <Line type="monotone" dataKey="bangla" stroke="green" />
+            </LineChart>
+        </div>
     );
 };
 
